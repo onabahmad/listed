@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.left {
+  position: absolute;
+  width: 588px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+
+  background: #000000;
+}
+.board {
+  position: absolute;
+  width: 246px;
+  height: 88px;
+  left: 171px;
+  top: 464px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ffffff;
+}
+.right {
+  position: absolute;
+  width: 852px;
+  height: 1024px;
+  left: 588px;
+  top: 0px;
+  background: #f5f5f5;
+}
+.sign_in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-right: 141px;
+}
+.main_div {
+  width: 365px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+}
+.Sign_in_text {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.label {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.main_div .social_icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.social_icons a {
+  display: block;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.social_icons a span {
+  margin-left: 5px;
+  font-size: 18px;
+}
+.social_icons a:first-child {
+  margin-right: 5px;
+  background: #000000;
+}
+
+.social_icons a:last-child {
+  margin-left: 5px;
+  background: #000000;
+}
+
+form {
+  margin-top: 25px;
+}
+form .input_box {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+.input_box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid #f5f5f5;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding-left: 45px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.input_box input:focus {
+  border-color: #346bd4;
+}
+.input_box .icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: grey;
+}
+form .option_div {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.option_div .check_box {
+  display: flex;
+  align-items: center;
+}
+.option_div span {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.option_div .forget_div a {
+  font-size: 16px;
+  color: #346bd4;
+  font-weight: 400;
+}
+.button input {
+  padding-left: 0;
+  background: #000000;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+form .sign_up {
+  text-align: center;
+  margin-top: 25px;
+}
+
+form a {
+  text-decoration: none;
+}
+form a:hover {
+  text-decoration: underline;
+}
+.sign_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .right {
+    width: 70%;
+    height: auto;
+    position: static;
+    margin-top: 0;
+  }
+
+  .board {
+    font-size: 72px;
+    line-height: 88px;
+    top: auto;
+  }
+
+  .main_div {
+    width: 365px;
+    padding: 30px;
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .social_icons {
+    margin-top: 20px;
+  }
+
+  .input_box input {
+    padding-left: 45px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .right {
+    width: 78%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .board {
+    font-size: 72px;
+    line-height: 88px;
+    top: auto;
+  }
+
+  .main_div {
+    width: 365px;
+    padding: 30px;
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .social_icons {
+    margin-top: 20px;
+  }
+
+  .input_box input {
+    padding-left: 45px;
+    font-size: 17px;
+  }
+}

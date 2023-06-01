@@ -79,3 +79,15 @@ nav i {
   width: 17.54px;
   height: 17.54px;
 }
+@media (min-width: 992px) {
+  /* Adjust the breakpoint to target larger screens */
+  nav {
+    height: 96vh;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  nav {
+    height: 136vh;
+  }
+}

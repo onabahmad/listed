@@ -9,15 +9,20 @@
   display: grid;
   height: 97%;
   width: 97%;
-  border-radius: 2rem;
+  border-radius: 2rem 0 0 2rem;
   background-color: rgb(241, 239, 239);
-  overflow: auto;
-  grid-template-columns: 20rem auto;
+  overflow: hidden;
+  grid-template-columns: 15rem auto;
 }
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .AppGlass {
-    grid-template-columns: 10%;
-    overflow: scroll;
-    background-color: bisque;
+    grid-template-columns: 100%;
+    overflow-y: scroll;
   }
-} */
+}
+
+@media screen and (max-width: 768px) {
+  .AppGlass {
+    grid-template-columns: 1fr;
+  }
+}

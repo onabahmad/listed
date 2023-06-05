@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBtlLMlEfU5_xl5kUUww-LrT9EwLUKxhkg",
-  authDomain: "listed-3b137.firebaseapp.com",
-  projectId: "listed-3b137",
-  storageBucket: "listed-3b137.appspot.com",
-  messagingSenderId: "683644877181",
-  appId: "1:683644877181:web:c5504f49d9e14e34623414",
+  apiKey: "AIzaSyCk2e6yloLfZkYZZTlTZESrmVhe2CmGGn8",
+  authDomain: "listed2-b78a3.firebaseapp.com",
+  projectId: "listed2-b78a3",
+  storageBucket: "listed2-b78a3.appspot.com",
+  messagingSenderId: "278891260596",
+  appId: "1:278891260596:web:ecc3edefa1e61b133985e1",
 };
 
 // Initialize Firebase

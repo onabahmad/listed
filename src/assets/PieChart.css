@@ -1,0 +1,125 @@
+.card1 {
+  padding: 9px;
+  border-radius: 20px;
+  width: 448px;
+  height: 175px;
+  background-color: rgb(255, 255, 255);
+}
+.card2 {
+  padding: 9px;
+  width: 448px;
+  height: 175px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.bottom_cards {
+  display: flex;
+  justify-content: space-between;
+  /* position: relative;
+  top: 4rem; */
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.today_schedule_firstcard {
+  filter: drop-shadow(0 5px 10px 0 #ffffff);
+  background-color: #ffffff;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+  font-size: 14px;
+  height: max-content;
+}
+.today_schedule_firstcard::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  background: #9bdd7c;
+  height: 220px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 0 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.today_schedule_firstcard:hover::before {
+  transition-delay: 0.2s;
+  transform: scale(40);
+}
+.today_schedule_secondcard {
+  filter: drop-shadow(0 5px 10px 0 #ffffff);
+  background-color: #ffffff;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+  z-index: 0;
+  top: 13px;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+  font-size: 14px;
+  height: max-content;
+  border-radius: 0 0 0 10px;
+}
+
+.today_schedule_secondcard::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  background: #6972c3;
+  height: 220px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 0 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.today_schedule_secondcard:hover::before {
+  transition-delay: 0.2s;
+  transform: scale(40);
+}
+@media screen and (max-width: 1200px) {
+  .bottom_cards {
+    flex-direction: column;
+    justify-content: center;
+    top: 1rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .card1 {
+    width: 350px;
+    margin-bottom: 1rem;
+  }
+  .card2 {
+    width: 350px;
+  }
+  .today_schedule_secondcard {
+    width: 300px;
+  }
+  .today_schedule_firstcard {
+    width: 300px;
+    height: fit-content;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card1 {
+    margin-bottom: 1rem;
+    width: 657px;
+  }
+  .card2 {
+    width: 657px;
+  }
+}

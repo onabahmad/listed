@@ -1,0 +1,33 @@
+.card {
+  height: 250px;
+  width: 924px;
+  padding: 15px;
+
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  /* position: relative;
+  top: 2rem; */
+}
+@media only screen and (max-width: 766px) {
+  .card {
+    width: 350px;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 652px;
+  }
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .card {
+    width: 933px;
+  }
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .card {
+    width: auto;
+  }
+}

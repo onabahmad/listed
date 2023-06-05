@@ -7,7 +7,6 @@ import {
 } from "firebase/auth";
 import { auth, provider } from "../firebase";
 import { useNavigate } from "react-router-dom";
-import AuthReducer from "../context/AuthReducer";
 import { AuthContext } from "../context/AuthContext";
 
 const Login = () => {
@@ -30,13 +29,11 @@ const Login = () => {
         alert("login succesfully");
         dispatch({ type: "LOGIN", payload: user });
         Nevigate("/");
-        // ...
       })
       .catch((error) => {
         setError(true);
         console.log(error);
-        alert("write a valid email or Refresh the page");
-        // ..
+        alert("Please register first or Refresh the page");
       });
   };
 
@@ -44,24 +41,22 @@ const Login = () => {
     setShowLogin(!showLogin);
     setShowSignup(!showSignup);
   };
-
+  //signup
   const handleSignupFormSubmit = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in
         const user = userCredential.user;
         console.log(user);
         alert("User register succesfully");
-        // ...
       })
       .catch((error) => {
         setError(true);
         console.log(error);
         alert("write a valid email or Refresh the page");
-        // ..
       });
   };
+  //  login with google
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
@@ -76,7 +71,7 @@ const Login = () => {
   };
 
   return (
-    <div className="AppGlass">
+    <div className="Main_login_container">
       <div className="left">
         <p className="board">Board.</p>
       </div>

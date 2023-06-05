@@ -1,0 +1,52 @@
+.MainDash {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard_title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.searchbar {
+  width: 180px;
+  height: 20px;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-image: url(../utils/serch.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.search_bell_prof {
+  display: flex;
+  gap: 1rem;
+}
+.profile_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .MainDash {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MainDash {
+    align-items: center;
+  }
+  .search_bell_prof {
+    gap: 0rem;
+  }
+  .searchbar {
+    width: 150px;
+  }
+}

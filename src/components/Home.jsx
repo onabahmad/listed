@@ -1,18 +1,15 @@
 import React from "react";
-import Dashboard from "./Dashboard";
-import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 import "../assets/Home.css";
+import MainDash from "./MainDash";
 
 const Home = ({ photoURL }) => {
   return (
     <div className="home">
       <div className="AppGlass">
-        <div>
-          <Sidebar />
-        </div>
-        <div>
-          <Dashboard photoURL={photoURL} />
-        </div>
+        <Navbar />
+
+        <MainDash photoURL={photoURL} />
       </div>
     </div>
   );

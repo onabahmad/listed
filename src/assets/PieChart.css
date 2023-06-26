@@ -68,7 +68,7 @@
   transition: 0.6s ease-in;
   font-size: 14px;
   height: max-content;
-  border-radius: 0 0 0 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .today_schedule_secondcard::before {

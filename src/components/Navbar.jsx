@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavbarData } from "../utils/Data";
 import "../assets/Navbar.css";
 import { motion } from "framer-motion";
+import { AiOutlineBars } from "react-icons/ai";
 
 const Navbar = () => {
   const [selected, setSelected] = useState(0);
@@ -23,13 +24,14 @@ const Navbar = () => {
         className="bars"
         style={expanded ? { left: "60%" } : { left: "5%" }}
         onClick={() => setExpaned(!expanded)}
-      ></div>
+      >
+        <AiOutlineBars />
+      </div>
       <motion.div
         className="sidebar"
         variants={sidebarVariants}
         animate={window.innerWidth <= 768 ? `${expanded}` : ""}
       >
-        {/* logo */}
         <div className="logo">
           <span>Board.</span>
         </div>
@@ -47,7 +49,7 @@ const Navbar = () => {
               </div>
             );
           })}
-          {/* signoutIcon */}
+
           <div className="menuItem">
             <span>Help</span>
             <br />

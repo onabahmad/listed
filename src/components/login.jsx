@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "../assets/Login.css";
 import {
   createUserWithEmailAndPassword,
@@ -19,6 +19,13 @@ const Login = () => {
 
   const Nevigate = useNavigate();
   const { dispatch } = useContext(AuthContext);
+  useEffect(() => {
+    const hasPageReloaded = localStorage.getItem("hasPageReloaded");
+    if (!hasPageReloaded) {
+      localStorage.setItem("hasPageReloaded", true);
+      window.location.reload();
+    }
+  }, []);
   const handleLogin = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)

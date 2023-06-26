@@ -30,6 +30,8 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  position: relative;
+  bottom: 3px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -44,9 +46,16 @@
     align-items: center;
   }
   .search_bell_prof {
-    gap: 0rem;
+    gap: 3rem;
   }
   .searchbar {
     width: 150px;
+  }
+  .dashboard_title {
+    display: none;
+  }
+  .profile_img {
+    position: relative;
+    bottom: 7px;
   }
 }

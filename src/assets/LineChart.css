@@ -22,7 +22,7 @@
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .card {
-    width: 933px;
+    width: auto;
   }
 }
 /* Media Query for Large screens */
